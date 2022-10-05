@@ -31,10 +31,15 @@ spring:
       enabled: false
 
   rabbitmq:
-    host: localhost
-    port: 5672
+    host: localhost #broker host
+    port: 5672 # listening
     username: admin
     password: secret
+
+#  listen
+#  rabbitmq:
+#    template:
+#      receive-timeout: 30000
 
   kafka:
     bootstrap-servers:
@@ -70,6 +75,7 @@ logging:
   level:
     tacos: WARN
     org.hibernate.type.descriptor.sql: trace # Binding param
-#  jms:
-#     template:
-#       default-destination: tacocloud.order.queue
+
+
+
+

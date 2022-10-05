@@ -13,6 +13,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "TACO_ORDER")
+//
 public class Order implements Serializable {
     private static final long serialVersionId = 1L;
 
